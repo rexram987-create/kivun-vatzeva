@@ -1,5 +1,5 @@
-const C='kivun-vatzeva-v3';
-const A=['./','index.html','style.css','app.js','manifest.json','icon.svg','icon-192.png','icon-512.png'];
+const C='kivun-vatzeva-v4';
+const A=["./","index.html","style.css","app.js","manifest.json","icon.svg","icon-192.png","icon-512.png","audio/colors/ahmar.mp3","audio/colors/azraq.mp3","audio/colors/akhdar.mp3","audio/colors/asfar.mp3","audio/colors/abyad.mp3","audio/colors/aswad.mp3","audio/colors/burtuqali.mp3","audio/colors/banafsaji.mp3","audio/directions/yamin.mp3","audio/directions/yasar.mp3","audio/directions/foq.mp3","audio/directions/taht.mp3","audio/directions/quddam.mp3","audio/directions/wara.mp3","audio/compass/shamal.mp3","audio/compass/shamal-sharq.mp3","audio/compass/sharq.mp3","audio/compass/janub-sharq.mp3","audio/compass/janub.mp3","audio/compass/janub-gharb.mp3","audio/compass/gharb.mp3","audio/compass/shamal-gharb.mp3"];
 
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(C).then(cache=>cache.addAll(A)).then(()=>self.skipWaiting()));
